@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Blackjack",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                    "-std=c++17", "-g", "-Iinclude",
+                    "src/Baraja.cpp",
+                    "src/Carta.cpp",
+                    "src/Configuracion.cpp",
+                    "src/Dealer.cpp",
+                    "src/Juego.cpp",
+                    "src/Jugador.cpp",
+                    "src/Participante.cpp",
+                    "src/Utilidades.cpp",
+                    "src/main.cpp",
+                    "-o", "bin/blackjack.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila todos los .cpp del proyecto Blackjack"
+        }
+    ]
+}

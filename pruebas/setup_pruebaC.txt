@@ -1,0 +1,3 @@
+5
+Hearts,Diamonds,Clubs,Spades
+20
